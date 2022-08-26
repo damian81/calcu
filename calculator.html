@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script type="text/javascript">
+
         const vaciar = () => {
             document.getElementById("n1").value = "";
         }
@@ -13,14 +14,21 @@
         const cuadrado = () => {
             let num = document.getElementById("n1");
             num.value = num.value * num.value;
+
+        const inverso = () => {
+            let num = document.getElementById("n1");
+            num.value = 1 / num.value;
         }
     </script>
 
 </head>
 <body id="cuerpo">
+
     <h1>Calculator</h1>
-    <label>Número:</label>
+    Número:
     <input type="text" id="n1" onclick="vaciar()" />
     <button id="n2" onclick="cuadrado()">x<sup>2</sup></button>
+    <button id="n3" onclick="inverso()"> 1/x </button>
+
 </body>
 </html>
